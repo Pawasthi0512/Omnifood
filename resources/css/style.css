@@ -1,0 +1,125 @@
+/************BASIC SETUP************/
+
+*{
+    margin :0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html{
+    background-color: #fff;
+    color: rgb(29, 28, 28);
+    font-family:'Lato','Arial','sans-serif';
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    width: 1140px;
+    margin: auto;
+}
+/************HEADER DECORATION************/
+header{
+    background-image: linear-gradient(rgba(65, 63, 63, 0.699),rgba(65, 63, 63, 0.699)),url(img/hero.jpg);
+    background-position: center;
+    background-size: cover; /* Image size will be front page of browser*/
+    height: 100vh; /* This will do background image height 100vh */
+}
+
+/************HEADING DECORATION************/
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+h1{
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/************BUTTON DECORATION************/
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    border-radius: 100px;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: background-color 0.2s,color 0.2s, border 0.2s;  /* This will create time delay in transition of effect between 
+    link(or visited) and hover( or active) */
+}
+
+/* link is the state before the button click or arrow on button.
+visited is the state after the button click or arrow on button*/
+.btn-full:link,
+.btn-full:visited{
+    color:#fff ;
+    background-color: rgb(223, 100, 29);
+    border: 1px solid rgb(223, 100, 29);
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: rgb(223, 100, 29) ;
+    /* background-color: #fff; */
+    border: 1px solid rgb(223, 100, 29);
+}
+
+/* hover is the state when we take mouse pointer at the link
+   active is the state when click on link */
+.btn-full:hover,
+.btn-full:active{
+    color:#fff ;
+    background-color: rgb(146, 63, 15);
+    border: 1px solid rgb(146, 63, 15);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    color: #fff ;
+    background-color: rgb(146, 63, 15);
+    border: 1px solid rgb(146, 63, 15);
+}
+
+/************LOGO DECORATION************/
+.logo{
+    height: 100px;
+    width: auto;
+    float: left ;
+    margin-top: 20px;
+}
+
+/************NAVIGATION************/
+.main-navigation{
+    display: inline-block;
+    float: right;
+}
+
+.main-navigation li{
+    margin-top: 60px;
+    list-style: none;
+}
+
+.main-navigation li a:link,
+.main-navigation li a:visited{
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-navigation li a:hover,
+.main-navigation li a:active{
+    color: #fff;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 3px solid rgb(223, 100, 29);
+}
