@@ -17,6 +17,17 @@ html{
     width: 1140px;
     margin: auto;
 }
+
+/************* Creating Clear class for float function ************************/
+.clearfix {zoom: 1}
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+
 /************HEADER DECORATION************/
 header{
     background-image: linear-gradient(rgba(65, 63, 63, 0.699),rgba(65, 63, 63, 0.699)),url(img/hero.jpg);
@@ -203,4 +214,55 @@ visited is the state after the button click or arrow on button*/
 .meals-photo img:hover{
     transform: scale(1.03);
     opacity: 1;
+}
+
+/***************
+How it work section decoration 
+****************/
+.sub-title{
+    padding: 0px;
+}
+.section-steps{
+    padding: 0px;
+    background-color: rgb(233, 233, 233);
+}
+.steps-box:first-child{
+    margin-top: 30px;
+    padding-right: 3%;
+    text-align: right;
+}
+.steps-box:last-child{
+    margin-top: 80px;
+    padding-left: 3%;
+    
+}
+.app-screen{
+    width: 40%;
+    height: auto; 
+}
+.work-steps{
+    margin-bottom: 50px;
+}
+.work-steps:last-of-type{
+    margin-bottom: 80px;
+}
+.work-steps div{
+    /* margin-right:10px; */
+    color:rgb(223, 100, 29);
+    font-size: 150%;
+    border: 2px solid rgb(223, 100, 29);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 3px;
+    float: left;
+    margin-left: 25px ;
+
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
 }
