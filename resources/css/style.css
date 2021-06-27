@@ -304,7 +304,7 @@ Testinomials section decoration
     background-image: linear-gradient(rgba(34, 34, 34, 0.699),rgba(32, 32, 32, 0.699)), url(img/back-customers.jpg);
     background-size: cover;
     color: aliceblue;
-    background-attachment: fixed;
+    background-attachment: fixed;/* This will fix the background photo when we scroll slides*/
     padding-top: 30px;
 }
 blockquote{
@@ -316,8 +316,10 @@ blockquote{
     position: relative;
     margin-top: 30px;
 }
+/* IF WE HAVE USE ABSOLUTE POSITION THEN ITS PARENTS MUST HAS POSITION RELATIVE */
+/* This class is for quotation marks  */
 blockquote:before{
-    content: "\201c";
+    content: "\201c"; /*This code is obtain from internet and this is for quotes*/
     font-size: 400%;
     position: absolute;
     left: -5px;
@@ -327,11 +329,56 @@ blockquote:before{
 }
 cite{
     font-size: 80%;
-    display: block;
+    display: block; /*It will create cite as different box*/
 }
 cite img{
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
-    vertical-align: middle;
+    vertical-align: middle; /* This attribute aline whole box to vertically align*/
+}
+
+/* 
+Sign Up section decoration
+*/
+.section-plans{
+    background-color: rgb(211, 206, 206);
+    padding: 30px;
+}
+.plan-box{
+    background-color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 15px;
+    box-shadow: 2px 4px 2px rgb(94, 88, 88);
+
+}
+.plan-box div ul{
+    list-style: none;
+}
+.plan-box div ul li{
+    padding: 5px 0;
+    font-style: normal;
+}
+.plan-box div{
+    padding-top: 15px;
+    border-bottom: 1px solid rgb(211, 206, 206);
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: 0px;
+}
+.plan-price{
+    font-size: 300%;
+    color: rgb(223, 100, 29);
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+.plan-price-meal{
+    font-size: 80%;
 }
