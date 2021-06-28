@@ -109,7 +109,8 @@ h2::after{
 }
 /************BUTTON DECORATION************/
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     border-radius: 100px;
     padding: 10px 30px;
@@ -121,7 +122,8 @@ h2::after{
 /* link is the state before the button click or arrow on button.
 visited is the state after the button click or arrow on button*/
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
     color:#fff ;
     background-color: rgb(223, 100, 29);
     border: 1px solid rgb(223, 100, 29);
@@ -138,7 +140,8 @@ visited is the state after the button click or arrow on button*/
 /* hover is the state when we take mouse pointer at the link
    active is the state when click on link */
 .btn-full:hover,
-.btn-full:active{
+.btn-full:active,
+input[type=submit]:hover{
     color:#fff ;
     background-color: rgb(146, 63, 15);
     border: 1px solid rgb(146, 63, 15);
@@ -342,7 +345,7 @@ cite img{
 Sign Up section decoration
 */
 .section-plans{
-    background-color: rgb(211, 206, 206);
+    background-color: rgb(233, 233, 233);
     padding: 30px;
 }
 .plan-box{
@@ -362,7 +365,7 @@ Sign Up section decoration
 }
 .plan-box div{
     padding-top: 15px;
-    border-bottom: 1px solid rgb(211, 206, 206);
+    border-bottom: 1px solid rgb(233, 233, 233);
 }
 
 .plan-box div:last-child{
@@ -381,4 +384,32 @@ Sign Up section decoration
 }
 .plan-price-meal{
     font-size: 80%;
+}
+
+/*
+Decoration of Form Section 
+*/
+.section-form{
+    padding-top: 30px;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 3px;
+}
+textarea{
+    height: 100px;
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px 0px;
+}
+.contact-form{
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
