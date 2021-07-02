@@ -1,0 +1,84 @@
+/*Screen size for laptops : 1200px  */
+@media only screen and (max-width:1200px){
+    .hero-text-box{
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row { 
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+/*Screen size for iPad in landscope mode : 1024px  */
+@media only screen and (max-width:1023px){
+    body{ font-size: 18px;}
+    .long-copy{ 
+        width: 90%;
+        margin-left: 5%;
+    }
+    .icon{font-size: 200%;}
+    .box p{ line-height: 90%;}
+    .box{padding: 0%;}
+    h3{font-size: 120%;}
+    section{padding: 50px;}
+    /* How it work section  */
+    .steps-box:last-child{margin-top: 70px;}
+    .app-screen{width: 50%;}
+    .work-steps{margin-bottom: 40px;}
+    .work-steps:last-of-type{margin-bottom: 60px;}
+    .work-steps div{
+        font-size: 130%;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px ;
+    }
+    .btn-app img{
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    /* Our cities section */
+    .small-icon{
+        width: 15px;
+        font-size: 110%;
+    }
+    .box h3{font-size: 100%;}
+    .city-feature{font-size: 80%;}
+
+    /* Section Plans */
+    .section-plans{
+        padding: 10px;
+    }
+    .plan-price{
+        font-size: 250%;
+        font-weight: 300;
+    }
+}
+/*Screen size for iPad : 767px  */
+@media only screen and (max-width:767px){
+    .col{width: 100%;}
+    .main-navigation{display: none;}
+    h1{font-size: 180%;}
+    h2{font-size: 140%;}
+    .long-copy{
+        width: 100%;
+        margin: 0;
+        padding-bottom: 0px;
+    }
+    .row,
+    .hero-text-box{padding: 0 4%;}
+    .icon{
+        margin-top: 15px;
+        font-size: 200%;
+    }
+    .box h3{ margin-bottom: 5px;}
+    .section-form{width: 100%;}
+    .contact-form{padding-left: 0;}
+    .steps-box:first-child{text-align: center;}
+    .app-screen{width: 40%;}
+    .box img{margin-bottom: 5px;}
+}
+/*Screen size for mobile : 0 to 480px  */
+@media only screen and (max-width:480px){
+    section {padding: 25px 0;}
+}

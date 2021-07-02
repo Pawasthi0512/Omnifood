@@ -5,12 +5,14 @@
     padding:0px;
     box-sizing: border-box;
 }
-html{
+html,
+body{
     background-color: #fff;
     color: rgb(29, 28, 28);
     font-family:'Lato','Arial','sans-serif';
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .row{
@@ -306,7 +308,7 @@ Testinomials section decoration
 .section-testinomials{
     background-image: linear-gradient(rgba(34, 34, 34, 0.699),rgba(32, 32, 32, 0.699)), url(img/back-customers.jpg);
     background-size: cover;
-    color: aliceblue;
+    color: rgb(161, 167, 173);
     background-attachment: fixed;/* This will fix the background photo when we scroll slides*/
     padding-top: 30px;
 }
@@ -385,7 +387,9 @@ Sign Up section decoration
 .plan-price-meal{
     font-size: 80%;
 }
-
+.s-icon{
+    padding-right: 5px;
+}
 /*
 Decoration of Form Section 
 */
