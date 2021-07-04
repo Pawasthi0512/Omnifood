@@ -5,6 +5,7 @@
         <link rel="stylesheet" type = "text/css" href="./vendors/css/normalize.css">
         <link rel="stylesheet" type = "text/css" href="./vendors/css/grid.css">
         <link rel="stylesheet" type = "text/css" href="./vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type = "text/css" href="./vendors/css/animate.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet" type="text/css"> 
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
@@ -15,15 +16,16 @@
         <!-- <header> element  represents a container for introductory content or a set of navigational links.
             It contain headings,logos, navigation and background images. -->
         <header > 
-            <nav >
+            <nav>
                 <div class="row" >
                     <img src="./resources/css/img/logo-white.png" alt="Omnifood Logo" class="logo">
+                    <img src="./resources/css/img/logo.png" alt="Omnifood Logo" class="logo-black">
                     <ul class="main-navigation">
                         <li>
-                            <a href="#">Food Delivery</a>
-                            <a href="#">How it works</a>
-                            <a href="#">Our cities</a>
-                            <a href="#">Sign up</a>
+                            <a href="#features">Food Delivery</a>
+                            <a href="#works">How it works</a>
+                            <a href="#cities">Our cities</a>
+                            <a href="#signup">Sign up</a>
                         </li>
                     </ul>
                 </div>
@@ -32,12 +34,12 @@
                 <h1>Goodbye junk food.<br> Hello super healthy meals.</h1>
                 <!--<a></a> this will create button having name "I am hungry " -->
                 <!-- Here we create two name of one class.One of which is common to other and second is unique -->
-                <a class="btn btn-full" href="#">I am hungry</a>  
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class="btn btn-full  js-scroll-to-plans" href="#">I am hungry</a>  
+                <a class="btn btn-ghost js-scroll-to-start" href="#">Show me more</a>
             </div>
         </header>
 <!-- Feature section -->
-        <section class="section-features">
+        <section class="section-features js-section-features" id="features">
             <div class="row">
                 <h2> Get food fast  not fast food</h2>
                 <p class="long-copy">
@@ -45,7 +47,7 @@
                     we’re really good at it, we promise!
                 </p>
             </div>
-            <div class="row">
+            <div class="row js-wp-1">
                 <div class="col span-1-of-4 box">
                     <!-- This class for adding icons to website. First add css and font files to htmls file -->
                     <i class="ion-ios-infinite-outline icon"></i>
@@ -129,13 +131,13 @@
             </ul>
         </section>
 <!-- This section will tell users how this works  -->
-        <section class="section-steps">
+        <section class="section-steps" id="works">
             <div class="row sub-title">
                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
-                    <img src="./resources/img/app-iPhone.png" alt="App for omnifood " class="app-screen">
+                    <img src="./resources/img/app-iPhone.png" alt="App for omnifood " class="app-screen js-wp-2">
                 </div>
                 <div class="col span-1-of-2 steps-box">
                     <div class="work-steps"> 
@@ -156,11 +158,11 @@
             </div>
         </section>
         <!-- Adding cities feature to website -->
-        <section class="section-city">
+        <section class="section-city" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
-            <div class="row">
+            <div class="row js-wp-3">
                 <div class="col span-1-of-4 box">
                     <img src="./resources/img/lisbon-3.jpg" alt="lisbon">
                     <h3>Lisbon</h3>
@@ -257,12 +259,12 @@ Best food delivery service in the Bay Area. Keep up the great work!
             </div>
         </section>
         <!-- This section is sign up section  -->
-        <section class="section-plans">
+        <section class="section-plans js-section-plans" id="signup">
             <div class="row">
                 <h2>Start eating healthy today</h2>
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <div class="plan-box">
+                        <div class="plan-box js-wp-4">
                             <div>
                                 <h3>Premium</h3> <!-- Span is an attribute for text selection-->
                                 <p class="plan-price">399$ <span>/ month</span></p>
@@ -420,7 +422,7 @@ Best food delivery service in the Bay Area. Keep up the great work!
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<script src="Vendors/js/jquery.waypoints.min.js"></script>
-	<script src="Resources/js/scripts.js"></script>
+	<script src="vendors/js/jquery.waypoints.min.js"></script> <!--We have added waypoint file from internet. This will help us in appearence of navigation bar-->
+	<script src="resources/js/script.js"></script>
     </body>
 </html>

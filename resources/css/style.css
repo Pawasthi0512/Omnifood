@@ -163,11 +163,18 @@ input[type=submit]:hover{
     float: left ;
     margin-top: 20px;
 }
+.logo-black{
+    display: none;
+    height: 60px;
+    width: auto;
+    float: left;
+    margin: 10px 0px;
+}
 
 /************NAVIGATION************/
 .main-navigation{
     display: inline-block;
-    /* float: right; */
+    float: right;
 }
 
 .main-navigation li{
@@ -178,7 +185,7 @@ input[type=submit]:hover{
 .main-navigation li a:link,
 .main-navigation li a:visited{
     color: #fff;
-    margin-left: 20px;
+    margin-left: 60px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -193,6 +200,37 @@ input[type=submit]:hover{
     border-bottom: 3px solid rgb(223, 100, 29);
 }
 
+/* Sticky Navigation */
+.sticky{
+    position: fixed;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.863);
+    box-shadow: 0 2px 2px rgb(223, 221, 221);
+    z-index: 9999;
+}
+.sticky .main-navigation li{
+    margin-top: 30px;
+    float: right;
+}
+.sticky .main-navigation li a:link,
+.sticky .main-navigation li a:visited{
+    color: #555;
+    margin-left: 20px;
+}
+.sticky .main-navigation li a:hover,
+.sticky .main-navigation li a:active{
+    padding-bottom: 20px;
+}
+.sticky .logo-black{
+    display: block;
+    height: 60px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.sticky .logo{display: none;}
 /* *********** Meals section **************/
 
 .meals-showcase{
@@ -477,4 +515,24 @@ footer{
 footer p{
     text-align: center;
     color: rgb(151, 151, 151);
+}
+
+/*Animation on scroll  */
+.js-wp-1,
+.js-wp-2,
+.js-wp-3
+{
+    opacity: 0;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+}
+.js-wp-4{
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+.js-wp-1.animated,
+.js-wp-2.animated,
+.js-wp-3.animated
+{
+    opacity: 1;
 }
