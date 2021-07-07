@@ -185,7 +185,7 @@ input[type=submit]:hover{
 .main-navigation li a:link,
 .main-navigation li a:visited{
     color: #fff;
-    margin-left: 60px;
+    margin-left: 20px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -199,6 +199,19 @@ input[type=submit]:hover{
     text-transform: uppercase;
     border-bottom: 3px solid rgb(223, 100, 29);
 }
+
+/* Mobile-navigation */
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #fff;
+}
+
 
 /* Sticky Navigation */
 .sticky{
